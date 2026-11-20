@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>FF Arena Tournament</title>
+<style>
+body{margin:0;font-family:Arial,sans-serif;background:#111;color:#fff;text-align:center}
+header{background:#ff6a00;padding:24px}
+h1{margin:0;font-size:32px}
+section{padding:18px;max-width:480px;margin:auto}
+.card{background:#1e1e1e;border-radius:12px;padding:16px;margin:12px 0}
+input,button{width:100%;padding:12px;margin:6px 0;border-radius:8px;border:none;font-size:16px;box-sizing:border-box}
+button{background:#ff6a00;color:#fff;font-weight:bold}
+</style>
+</head>
+<body>
+<header><h1>FF Arena Tournament</h1><p>Daily Free Fire Solo Tournament</p></header>
+<section>
+<div class="card"><h2>Match Timings</h2>
+<p>8:30 AM | 10:30 AM | 2:30 PM | 8:30 PM | 10:30 PM</p></div>
+<div class="card"><h2>Entry and Prizes</h2>
+<p>Entry fee: Rs 30</p><p>Rs 20 per kill</p><p>Rs 250 Booyah bonus</p></div>
+<div class="card"><h2>Register</h2>
+<form onsubmit="return sendForm()">
+<input id="n" placeholder="Your name" required>
+<input id="f" placeholder="Free Fire ID" required>
+<input id="p" placeholder="Phone number" required>
+<button type="submit">Register on Instagram</button>
+</form>
+<p>After registering, pay Rs 30 by UPI to the organizer.</p></div>
+</section>
+<script>
+function sendForm(){
+ alert('Send your Name, Free Fire ID and Phone number to ff_arena_01 on Instagram DM');
+ window.location.href='https://instagram.com/ff_arena_01';
+ return false;
+}
+</script>
+</body>
+</html>
